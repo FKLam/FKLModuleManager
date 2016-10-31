@@ -1,0 +1,6 @@
+framework module FKLModuleManager {
+  umbrella header "FKLModuleManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

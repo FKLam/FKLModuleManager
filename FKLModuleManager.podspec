@@ -18,14 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       FKLModuleManager can manager app lifecycle.
+                       *author FKL
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/FKLModuleManager'
+  s.homepage         = 'https://github.com/FKLam/FKLModuleManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'FKLam' => 'lfk0120@163.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/FKLModuleManager.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/FKLam/FKLModuleManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
