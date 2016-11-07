@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		587BBC3C1DD032DE009C944D /* AMGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC3B1DD032DE009C944D /* AMGBaseViewController.m */; };
+		587BBC411DD0660E009C944D /* MBProgressHUD+AMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC401DD0660E009C944D /* MBProgressHUD+AMG.m */; };
+		587BBC491DD08793009C944D /* AMGUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC481DD08793009C944D /* AMGUserDefaults.m */; };
+		587BBC4D1DD08A7C009C944D /* AMGBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC4C1DD08A7C009C944D /* AMGBaseRequest.m */; };
+		587BBC521DD08AFF009C944D /* AMGMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC511DD08AFF009C944D /* AMGMediator.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +42,17 @@
 
 /* Begin PBXFileReference section */
 		25BA69290CC99606CB14A527 /* FKLModuleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FKLModuleManager.podspec; path = ../FKLModuleManager.podspec; sourceTree = "<group>"; };
+		587BBC3A1DD032DE009C944D /* AMGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGBaseViewController.h; sourceTree = "<group>"; };
+		587BBC3B1DD032DE009C944D /* AMGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGBaseViewController.m; sourceTree = "<group>"; };
+		587BBC3F1DD0660E009C944D /* MBProgressHUD+AMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AMG.h"; sourceTree = "<group>"; };
+		587BBC401DD0660E009C944D /* MBProgressHUD+AMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AMG.m"; sourceTree = "<group>"; };
+		587BBC471DD08793009C944D /* AMGUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGUserDefaults.h; sourceTree = "<group>"; };
+		587BBC481DD08793009C944D /* AMGUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGUserDefaults.m; sourceTree = "<group>"; };
+		587BBC4B1DD08A7C009C944D /* AMGBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGBaseRequest.h; sourceTree = "<group>"; };
+		587BBC4C1DD08A7C009C944D /* AMGBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGBaseRequest.m; sourceTree = "<group>"; };
+		587BBC501DD08AFF009C944D /* AMGMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGMediator.h; sourceTree = "<group>"; };
+		587BBC511DD08AFF009C944D /* AMGMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGMediator.m; sourceTree = "<group>"; };
+		587BBC541DD08C05009C944D /* AMGMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMGMacros.h; sourceTree = "<group>"; };
 		58FBA10818703C4FA30D6358 /* Pods_FKLModuleManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKLModuleManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C34B03705FAA13C4CBE9B6A /* Pods-FKLModuleManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLModuleManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKLModuleManager_Tests/Pods-FKLModuleManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FKLModuleManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKLModuleManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +157,11 @@
 		587BBC191DD030B7009C944D /* AMGCore */ = {
 			isa = PBXGroup;
 			children = (
+				587BBC531DD08BD0009C944D /* AMGMacros */,
+				587BBC4F1DD08AD0009C944D /* AMGMediator */,
+				587BBC3D1DD0655D009C944D /* AMGCoreTool */,
+				587BBC3A1DD032DE009C944D /* AMGBaseViewController.h */,
+				587BBC3B1DD032DE009C944D /* AMGBaseViewController.m */,
 			);
 			path = AMGCore;
 			sourceTree = "<group>";
@@ -392,6 +413,60 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		587BBC3D1DD0655D009C944D /* AMGCoreTool */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC4A1DD08902009C944D /* AMGNetwork */,
+				587BBC461DD08793009C944D /* AMGUserDefaults */,
+				587BBC3E1DD065AE009C944D /* MBProgressHUD */,
+			);
+			path = AMGCoreTool;
+			sourceTree = "<group>";
+		};
+		587BBC3E1DD065AE009C944D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC3F1DD0660E009C944D /* MBProgressHUD+AMG.h */,
+				587BBC401DD0660E009C944D /* MBProgressHUD+AMG.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		587BBC461DD08793009C944D /* AMGUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC471DD08793009C944D /* AMGUserDefaults.h */,
+				587BBC481DD08793009C944D /* AMGUserDefaults.m */,
+			);
+			path = AMGUserDefaults;
+			sourceTree = "<group>";
+		};
+		587BBC4A1DD08902009C944D /* AMGNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC4B1DD08A7C009C944D /* AMGBaseRequest.h */,
+				587BBC4C1DD08A7C009C944D /* AMGBaseRequest.m */,
+			);
+			path = AMGNetwork;
+			sourceTree = "<group>";
+		};
+		587BBC4F1DD08AD0009C944D /* AMGMediator */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC501DD08AFF009C944D /* AMGMediator.h */,
+				587BBC511DD08AFF009C944D /* AMGMediator.m */,
+			);
+			path = AMGMediator;
+			sourceTree = "<group>";
+		};
+		587BBC531DD08BD0009C944D /* AMGMacros */ = {
+			isa = PBXGroup;
+			children = (
+				587BBC541DD08C05009C944D /* AMGMacros.h */,
+			);
+			path = AMGMacros;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -687,6 +762,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* FKLAppDelegate.m in Sources */,
+				587BBC4D1DD08A7C009C944D /* AMGBaseRequest.m in Sources */,
+				587BBC521DD08AFF009C944D /* AMGMediator.m in Sources */,
+				587BBC3C1DD032DE009C944D /* AMGBaseViewController.m in Sources */,
+				587BBC491DD08793009C944D /* AMGUserDefaults.m in Sources */,
+				587BBC411DD0660E009C944D /* MBProgressHUD+AMG.m in Sources */,
 				6003F5A7195388D20070C39A /* FKLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

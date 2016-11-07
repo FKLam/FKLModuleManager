@@ -1,9 +1,9 @@
 {
   "name": "FKLModuleManager",
-  "version": "0.1.0",
-  "summary": "A short description of FKLModuleManager.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/FKLModuleManager",
+  "version": "0.1.1",
+  "summary": "FKLModuleManager for Application.",
+  "description": "FKLModuleManager can manager app lifecycle.\n*author FKL",
+  "homepage": "https://github.com/FKLam/FKLModuleManager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,31 @@
     "FKLam": "lfk0120@163.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/FKLModuleManager.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/FKLam/FKLModuleManager.git",
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
-  "source_files": "FKLModuleManager/Classes/**/*"
+  "source_files": "FKLModuleManager/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "AMGCore",
+      "source_files": "FKLModuleManager/BaseModule/AMGCore/**/*.{h,m}",
+      "dependencies": {
+        "RealReachability": [
+
+        ],
+        "AFNetworking": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "YTKNetwork": [
+
+        ]
+      }
+    }
+  ]
 }

@@ -29,13 +29,21 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/FKLam/FKLModuleManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'FKLModuleManager/Classes/**/*'
   
   # s.resource_bundles = {
   #   'FKLModuleManager' => ['FKLModuleManager/Assets/*.png']
   # }
+
+    s.subspec 'AMGCore' do |aMGCore|
+    aMGCore.source_files = 'FKLModuleManager/BaseModule/AMGCore/**/*.{h,m}'
+    aMGCore.dependency 'RealReachability'
+    aMGCore.dependency 'AFNetworking'
+    aMGCore.dependency 'MBProgressHUD'
+    aMGCore.dependency 'YTKNetwork'
+    end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
