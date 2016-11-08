@@ -12,6 +12,11 @@
 		587BBC491DD08793009C944D /* AMGUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC481DD08793009C944D /* AMGUserDefaults.m */; };
 		587BBC4D1DD08A7C009C944D /* AMGBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC4C1DD08A7C009C944D /* AMGBaseRequest.m */; };
 		587BBC521DD08AFF009C944D /* AMGMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 587BBC511DD08AFF009C944D /* AMGMediator.m */; };
+		58C918D31DD17FED008D03FF /* AMGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C918D21DD17FED008D03FF /* AMGAlertView.m */; };
+		58C918D61DD1800F008D03FF /* AMGSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C918D51DD1800F008D03FF /* AMGSearchBar.m */; };
+		58C918DA1DD1D62B008D03FF /* JiaSearchBar_ICON@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58C918D91DD1D62B008D03FF /* JiaSearchBar_ICON@2x.png */; };
+		58C918E01DD1D9FF008D03FF /* AMGPatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C918DF1DD1D9FF008D03FF /* AMGPatchModel.m */; };
+		58C918E31DD1DBF1008D03FF /* AMGPatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C918E21DD1DBF1008D03FF /* AMGPatchHelper.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -53,6 +58,15 @@
 		587BBC501DD08AFF009C944D /* AMGMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGMediator.h; sourceTree = "<group>"; };
 		587BBC511DD08AFF009C944D /* AMGMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGMediator.m; sourceTree = "<group>"; };
 		587BBC541DD08C05009C944D /* AMGMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMGMacros.h; sourceTree = "<group>"; };
+		58C918D11DD17FED008D03FF /* AMGAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGAlertView.h; sourceTree = "<group>"; };
+		58C918D21DD17FED008D03FF /* AMGAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGAlertView.m; sourceTree = "<group>"; };
+		58C918D41DD1800F008D03FF /* AMGSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGSearchBar.h; sourceTree = "<group>"; };
+		58C918D51DD1800F008D03FF /* AMGSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGSearchBar.m; sourceTree = "<group>"; };
+		58C918D91DD1D62B008D03FF /* JiaSearchBar_ICON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JiaSearchBar_ICON@2x.png"; sourceTree = "<group>"; };
+		58C918DE1DD1D9FF008D03FF /* AMGPatchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGPatchModel.h; sourceTree = "<group>"; };
+		58C918DF1DD1D9FF008D03FF /* AMGPatchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGPatchModel.m; sourceTree = "<group>"; };
+		58C918E11DD1DBF1008D03FF /* AMGPatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMGPatchHelper.h; sourceTree = "<group>"; };
+		58C918E21DD1DBF1008D03FF /* AMGPatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMGPatchHelper.m; sourceTree = "<group>"; };
 		58FBA10818703C4FA30D6358 /* Pods_FKLModuleManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKLModuleManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C34B03705FAA13C4CBE9B6A /* Pods-FKLModuleManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLModuleManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKLModuleManager_Tests/Pods-FKLModuleManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FKLModuleManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKLModuleManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,9 +171,11 @@
 		587BBC191DD030B7009C944D /* AMGCore */ = {
 			isa = PBXGroup;
 			children = (
+				58C918CE1DD17F76008D03FF /* AMGUI */,
 				587BBC531DD08BD0009C944D /* AMGMacros */,
 				587BBC4F1DD08AD0009C944D /* AMGMediator */,
 				587BBC3D1DD0655D009C944D /* AMGCoreTool */,
+				58C918DB1DD1D750008D03FF /* AMGCoreHelper */,
 				587BBC3A1DD032DE009C944D /* AMGBaseViewController.h */,
 				587BBC3B1DD032DE009C944D /* AMGBaseViewController.m */,
 			);
@@ -469,6 +485,61 @@
 			path = AMGMacros;
 			sourceTree = "<group>";
 		};
+		58C918CE1DD17F76008D03FF /* AMGUI */ = {
+			isa = PBXGroup;
+			children = (
+				58C918D01DD17FB9008D03FF /* AMGAlertView */,
+				58C918CF1DD17FA0008D03FF /* AMGSearchBar */,
+			);
+			path = AMGUI;
+			sourceTree = "<group>";
+		};
+		58C918CF1DD17FA0008D03FF /* AMGSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				58C918D91DD1D62B008D03FF /* JiaSearchBar_ICON@2x.png */,
+				58C918D41DD1800F008D03FF /* AMGSearchBar.h */,
+				58C918D51DD1800F008D03FF /* AMGSearchBar.m */,
+			);
+			path = AMGSearchBar;
+			sourceTree = "<group>";
+		};
+		58C918D01DD17FB9008D03FF /* AMGAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				58C918D11DD17FED008D03FF /* AMGAlertView.h */,
+				58C918D21DD17FED008D03FF /* AMGAlertView.m */,
+			);
+			path = AMGAlertView;
+			sourceTree = "<group>";
+		};
+		58C918DB1DD1D750008D03FF /* AMGCoreHelper */ = {
+			isa = PBXGroup;
+			children = (
+				58C918DD1DD1D79F008D03FF /* AMGPatchHelper */,
+				58C918DC1DD1D77E008D03FF /* AMGLoggerHelper */,
+			);
+			path = AMGCoreHelper;
+			sourceTree = "<group>";
+		};
+		58C918DC1DD1D77E008D03FF /* AMGLoggerHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AMGLoggerHelper;
+			sourceTree = "<group>";
+		};
+		58C918DD1DD1D79F008D03FF /* AMGPatchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				58C918DE1DD1D9FF008D03FF /* AMGPatchModel.h */,
+				58C918DF1DD1D9FF008D03FF /* AMGPatchModel.m */,
+				58C918E11DD1DBF1008D03FF /* AMGPatchHelper.h */,
+				58C918E21DD1DBF1008D03FF /* AMGPatchHelper.m */,
+			);
+			path = AMGPatchHelper;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +718,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C918DA1DD1D62B008D03FF /* JiaSearchBar_ICON@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -762,13 +834,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* FKLAppDelegate.m in Sources */,
+				58C918D31DD17FED008D03FF /* AMGAlertView.m in Sources */,
 				587BBC4D1DD08A7C009C944D /* AMGBaseRequest.m in Sources */,
 				587BBC521DD08AFF009C944D /* AMGMediator.m in Sources */,
 				587BBC3C1DD032DE009C944D /* AMGBaseViewController.m in Sources */,
 				587BBC491DD08793009C944D /* AMGUserDefaults.m in Sources */,
+				58C918E01DD1D9FF008D03FF /* AMGPatchModel.m in Sources */,
 				587BBC411DD0660E009C944D /* MBProgressHUD+AMG.m in Sources */,
+				58C918E31DD1DBF1008D03FF /* AMGPatchHelper.m in Sources */,
 				6003F5A7195388D20070C39A /* FKLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				58C918D61DD1800F008D03FF /* AMGSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

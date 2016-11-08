@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F4E0B61B709AA23351C402E53BA7A5E623EE03D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F4E0B61B709AA23351C402E53BA7A5E623EE03D4" : 9223372036854775807,
+    "452B3276F795C9EECDCD47358F9892053020A278" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2FF8C247-F501-46C4-B2D9-6874A688784B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F4E0B61B709AA23351C402E53BA7A5E623EE03D4" : "FKLModuleManager\/",
+    "452B3276F795C9EECDCD47358F9892053020A278" : "jiaModuleDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FKLModuleManager",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/FKLModuleManager.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FKLam\/jiaModuleDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "452B3276F795C9EECDCD47358F9892053020A278"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FKLam\/FKLModuleManager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4E0B61B709AA23351C402E53BA7A5E623EE03D4"
+    }
+  ]
+}

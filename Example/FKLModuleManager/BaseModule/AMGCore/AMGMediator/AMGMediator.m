@@ -62,9 +62,9 @@
              params:(NSDictionary *)params {
     
     NSString *targetClassString =
-    [NSString stringWithFormat:@"Target_%@", targetName];
+    [NSString stringWithFormat:@"AMGTarget_%@", targetName];
     NSString *actionString =
-    [NSString stringWithFormat:@"Action_%@:", actionName];
+    [NSString stringWithFormat:@"AMGAction_%@:", actionName];
     
     Class targetClass = NSClassFromString(targetClassString);
     id target = [[targetClass alloc] init];
